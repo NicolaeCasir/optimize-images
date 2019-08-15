@@ -3,14 +3,15 @@ from PIL import Image, ImageOps
 import datetime
 
 location = "images/"  # Folder to parse
-valid_ext = [".jpg", "jpeg", ".png"]  #  Allowed extensions
+valid_ext = [".jpg", "jpeg", ".png"]  # Allowed extensions
 total = processed = removed = 0  # Counters
 img_size = (1600, 1200)  # Width, height for image crop
 thumbnail = (350, 260)  # Width, height for thumbnail
 quality = 60  # Quality of saved images
 min_width = 500  # Min with for image to process
-log_nr = 5  # Every X files, Log total processed
+log_nr = 1000  # Every X files, Log total processed
 start_time = datetime.datetime.now()  # Start datetime
+
 
 def parse_folders(folder):
     global total, processed, removed, min_width, log_nr, quality
@@ -71,5 +72,7 @@ print("Total parsed: " + str(total) + " images.")
 print("Processed: " + str(processed) + " images.")
 print("Removed: " + str(removed) + " images")
 elapsed_seconds = (datetime.datetime.now() - start_time).total_seconds()
-print("Elapsed time: " + str("%.3f" % elapsed_seconds)+ " seconds. Aprox. " + str(int(elapsed_seconds / 60)) + " minutes.")
+print("Elapsed time: " +
+      str("%.3f" % elapsed_seconds) + " seconds. Aprox. " +
+      str(int(elapsed_seconds / 60)) + " minutes.")
 print("Bye bye...")
