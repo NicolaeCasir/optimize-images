@@ -1,5 +1,6 @@
 # Image Optimizer
 I had to process (optimize, resize, crete thumbnails and delete) more than 150k images.
+
 The easiest way was to create this python script.
 
 ## Usage
