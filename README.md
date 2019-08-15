@@ -24,6 +24,7 @@ The easiest way was to create this python script.
     min_width = 500  # Min with for image to process
     log_nr = 5  # Every X files, Log total processed
     ```
+    or ... For optimization only, edit `optimize.py`
 3. Run script:
 
 ```
