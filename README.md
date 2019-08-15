@@ -28,12 +28,14 @@ The easiest way was to create this python script.
 3. Run script:
 
 ```
-python main.py
+python main.py  # for full process
+python optimize.py  # for optimization only
 ```
 or
 
 ``` 
-python3 main.py
+python3 main.py  # for full process
+python3 optimize.py  # for optimization only
 ```
 
 ## My results
